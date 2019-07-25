@@ -4,7 +4,8 @@
   "description": "Node Server Testing Challenge",
   "main": "server.js",
   "scripts": {
-    "test": "jest --watch"
+    "test": "jest --watch",
+    "start": "nodemon index.js"
   },
   "jest": {
     "testEnvironment": "node"
@@ -14,17 +15,29 @@
     "url": "git+https://github.com/LambdaSchool/node-server-testing.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Wasiu Idowu",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/LambdaSchool/node-server-testing/issues"
   },
   "homepage": "https://github.com/LambdaSchool/node-server-testing#readme",
   "devDependencies": {
+    "cross-env": "^5.2.0",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.2.0",
+    "eslint-plugin-import": "^2.18.2",
     "jest": "^24.8.0",
+    "nodemon": "^1.19.1",
     "supertest": "^4.0.2"
   },
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^8.0.0",
+    "helmet": "^3.19.0",
+    "jsonwebtoken": "^8.5.1",
+    "knex": "^0.19.1",
+    "sqlite3": "^4.0.9"
   }
 }
